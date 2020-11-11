@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload Buzzie's video</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="upload.css">
+       <script> function f1() {
+           window.open("index.html"); 
+        }
+        </script>
+</head>
+<body>
+<h2>버찌들의 동영상을 넣어주세요!</h2>
+<br>
+<h4>동영상은 1920*1080 이하의 크기만 재생가능합니다.</h4>
+<br>
+<input type="file" name="file" onchange="selectVideo (this);" />
+<video autoplay id="video" controls>
+    <source id="source" type="video/mp4">
+</video>
+
+<script>
+function selectVideo (self) {
+    var file = self.files[0];
+    var reader = new FileReader ();
+
+    reader.onload = function (e) {
+        var src = e.target.result;
+        var video = document.getElementById("video")
+        var source = document.getElementById("source")
+
+        source.setAttribute("src", src);
+        video.load();
+        video.play();
+    };
+    reader.readAsDataURL (file);
+}
+</script>
+<br><br>
+<div class="button">
+<input type="button" value="Back to Buzzies Home" onclick="f1()">

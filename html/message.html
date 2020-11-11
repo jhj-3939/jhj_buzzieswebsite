@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Buzzies</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+         body {
+             font-family:monospace;
+             padding: 10px;
+             background:rgb(253, 248, 200);
+         }
+         .header{
+            text-align: center;
+        } 
+    
+    nav ul{
+        width: 100%;
+        background-color: lightpink;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{
+        display:inline-block;
+    }
+    .home{
+        background-color: lightsalmon;
+        width: 100px;
+        text-align: center;
+        font-weight: bold;
+        float: right;
+    }
+    .home a {
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                    padding: 16px 16px;
+                }
+    
+                .dropdown {
+                    position: relative;
+                }
+    
+                .dropdown-menu {
+                    /*background-color: darkorange; */
+                    color: white;
+                    padding: 16px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color:rgb(250, 210, 216);
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                }
+    
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+    /* dropdown-menu 에는 hover 적용이 안됨 */
+    .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+    
+                .dropdown-content a:hover {background-color: #f1f1f1}
+    
+                .dropdown-menu:hover:not(.home){
+                    background-color:lightskyblue;
+                    color: white;
+                }
+     /* End-navigation and dropdown */
+     body{
+         text-align: center;
+     }
+    
+        </style>
+        
+    </head>
+    <body>
+        <div class="header">
+     
+       <img src="banner.png" width="93%" height="210px">
+        </div>
+        <nav>
+            <ul>
+            <li class="dropdown">
+                <div class="dropdown-menu">Name</div>
+                <div class="dropdown-content">
+                    <a href="SA.html">Seung-a</a>
+                    <a href="book.html">Hanbyul</a>
+                    <a href="snack.html">Haejeong</a>
+                    <a href="dress.html">Yejin</a>
+                    <a href="Han.html">Hanna</a>
+                    <a href="Chan.html">Chaeun</a>
+                    <a href="Heji.html">Hyeji</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">log in</div>
+                <div class="dropdown-content">
+                    <a href="login.html">Sign Up</a>
+                    <a href="login 2.html">log in</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Upload</div>
+                <div class="dropdown-content">
+                    <a href="upload.html">Upload picture</a>
+                    <a href="video.html">Upload video</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">History</div>
+                    <div class="dropdown-content">
+                        <a href="trip.html">trip photo</a>
+                        <a href="school.html">School photo</a>
+                        <a href="History.html">Time line</a>
+                  </div>
+            <li class="dropdown">
+                    <div class="dropdown-menu">Ask</div>
+                    <div class="dropdown-content">
+                        <a href="ask.html">Ask to Buzzies</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-menu">Contents</div>
+                    <div class="dropdown-content">
+                        <a href="game.html">Game</a>
+                        <a href="message.html">Messenger</a>
+                    </div>
+                </li>
+            <li class="home"><a href="index.html">Home</a></li>
+        </ul>
+        </nav> 
+</head>
+<body>
+    <div class="Cardbox">
+        <div class="card"><div><img src="승아2.png"></div>
+     <p><h3>Hi! my name is Seung-a. Click here to know about me more!</h3></p>
+    </div>
+    <p><i class="fa fa-briefcase"><a href="https://www.instagram.com/lani_ki29/?hl=ko"><h4>Seung-A's messenger</h4></a></i></p>
+    <p><i class="fa fa-briefcase"><a href="SA's selfie.zip" download><h4>Seung-A's Picture</h4></a></i></p>
+    <br><br>
+    <div class="Cardbox">
+        <div class="card"><div><img src="한별2.png"></div>
+     <p><h3>Hi! my name is Hanbyul. Click here to know about me more!</h3></p>
+    </div>
+    <p><i class="fa fa-briefcase"><a href="https://blog.naver.com/parkcapo"><h4>Hanbyul's blog</h4></a></i></p>
+    <p><i class="fa fa-briefcase"><a href="https://www.instagram.com/parkcapo/?hl=ko"><h4>Hanbyul's messenger</h4></a></i></p>
+    <p><i class="fa fa-briefcase"><a href="Star's selfie.zip" download><h4>Hanbyul's Picture</h4></a></i></p>
+    <br><br>
+    <div class="Cardbox">
+        <div class="card"><div><img src="해정2.png"></div>
+     <p><h3>Hi! my name is Haejeong. Click here to know about me more!</h3></p>
+    </div>
+    <p><i class="fa fa-briefcase"><a href="https://blog.naver.com/jhjung1563"><h4>Haejeong's blog</h4></a></i></p>
+    <p><i class="fa fa-briefcase"><a href="https://www.instagram.com/dongdrtiong/?hl=ko"><h4>Haejeong's messenger</h4></a></i></p>
+    <p><i class="fa fa-briefcase"><a href="JJ's selfie.zip" download><h4>Haejeong's Picture</h4></a></i></p>
+    <br><br>
+    <div class="cardbox"><div><img src="예진2.png"></div>
+    <p><h3>Hi! my name is Yejin. Click here to know about me more!</h3></p>
+   </div>
+   <p><i class="fa fa-briefcase"><a href="https://blog.naver.com/mmoohan"><h4>Yejin's blog</h4></a></i></p>
+   <p><i class="fa fa-briefcase"><a href="https://www.instagram.com/hanyejin_0918/?hl=ko"><h4>Yejin's messenger</h4></a></i></p>
+   <p><i class="fa fa-briefcase"><a href="YE's selfie.zip" download><h4>Yejin's Picture</h4></a></i></p>
+   <br><br>
+   <div class="cardbox"><div><img src="한나2.png"></div>
+   <p><h3>Hi! my name is Hanna. Click here to know about me more!</h3></p>
+</div>
+<p><i class="fa fa-briefcase"><a href="https://blog.naver.com/hanna9910"><h4>Hanna's blog</h4></a></i></p>
+<p><i class="fa fa-briefcase"><a href="https://www.instagram.com/hamnya22/?hl=ko"><h4>Hanna's messenger</h4></a></i></p>
+<p><i class="fa fa-briefcase"><a href="Han's selfie.zip" download><h4>Hanna's Picture</h4></a></i></p>
+<br><br>
+<div class="cardbox"><div><img src="채운2.png"></div>
+<p><h3>Hi! my name is Chaeun. Click here to know about me more!</h3></p>
+</div>
+<p><i class="fa fa-briefcase"><a href="CH's selfie.zip" download><h4>Chaeun's Picture</h4></a></i></p>
+<br><br>
+<div class="cardbox"><div><img src="혜지2.png"></div>
+<p><h3>Hi! my name is Hyeji. Click here to know about me more!</h3></p>
+</div>
+<p><i class="fa fa-briefcase"><a href="HJ's selfie.zip" download><h4>Hyeji's Picture</h4></a></i></p>
+
+</body>
+</html>

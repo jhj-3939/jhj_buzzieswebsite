@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>School Pictures</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+     body {
+         font-family:monospace;
+         padding: 10px;
+         background:rgb(253, 248, 200);
+     }
+     .header{
+        text-align: center;
+    } 
+
+nav ul{
+    width: 100%;
+    background-color: lightpink;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display:inline-block;
+}
+.home{
+    background-color: lightsalmon;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    float: right;
+}
+.home a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 16px 16px;
+            }
+
+            .dropdown {
+                position: relative;
+            }
+
+            .dropdown-menu {
+                /*background-color: darkorange; */
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color:rgb(250, 210, 216);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+/* dropdown-menu 에는 hover 적용이 안됨 */
+.dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1}
+
+            .dropdown-menu:hover:not(.home){
+                background-color:lightskyblue;
+                color: white;
+            }
+ /* End-navigation and dropdown */
+ body{
+     text-align: center;
+ }
+
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+   <img src="banner.png" width="93%" height="210px">
+    </div>
+    <nav>
+        <ul>
+        <li class="dropdown">
+            <div class="dropdown-menu">Name</div>
+            <div class="dropdown-content">
+                <a href="SA.html">Seung-a</a>
+                <a href="book.html">Hanbyul</a>
+                <a href="snack.html">Haejeong</a>
+                <a href="dress.html">Yejin</a>
+                <a href="Han.html">Hanna</a>
+                <a href="Chan.html">Chaeun</a>
+                <a href="Heji.html">Hyeji</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <div class="dropdown-menu">log in</div>
+            <div class="dropdown-content">
+                <a href="login.html">Sign Up</a>
+                <a href="login 2.html">log in</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <div class="dropdown-menu">Upload</div>
+            <div class="dropdown-content">
+                <a href="upload.html">Upload picture</a>
+                <a href="video.html">Upload video</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <div class="dropdown-menu">History</div>
+                <div class="dropdown-content">
+                    <a href="trip.html">trip photo</a>
+                    <a href="school.html">School photo</a>
+                    <a href="History.html">Time line</a>
+              </div>
+        <li class="dropdown">
+                <div class="dropdown-menu">Ask</div>
+                <div class="dropdown-content">
+                    <a href="ask.html">Ask to Buzzies</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <div class="dropdown-menu">Contents</div>
+                    <div class="dropdown-content">
+                        <a href="game.html">Game</a>
+                        <a href="message.html">Messenger</a>
+                    </div>
+            </li>
+        <li class="home"><a href="index.html">Home</a></li>
+    </ul>
+    </nav> 
+    <h2>고3때 버찌들과 함께 찍었던 사진을 모아봤어!</h2>
+    <script>
+var i = 0;
+var images = [];
+var time = 3000;
+
+images[0] = '17-1.jpg';
+images[1] = '17-2.jpg';
+images[2] = '17-3.jpg';
+images[3] = '17-4.jpg';
+images[4] = '17-5.jpg';
+images[5] = '17-6.jpg';
+images[6] = '17-7.jpg';
+images[7] = '17-8.jpg';
+images[8] = '17-9.jpg';
+images[9] = '17-10.jpg';
+images[10] = '17-11.jpg';
+
+function changeImg(){
+    document.slide.src = images[i];
+
+    if(i<images.length - 1){
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout("changeImg()", time);
+}
+
+window.onload = changeImg;
+    </script>
+    <img name="slide" width="70%" height="60%"><br>
+    <audio src="back.mp3" controls autoplay loop></audio>
+</body>
+</html>

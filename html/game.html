@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzzies Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="game.css">
+            <script> function f1() {
+           window.open("index.html"); 
+        }
+        </script>
+</head>
+<body>
+    <h2>Buzzies model game</h2>
+    <h3>PART1. JJ's one day (정정이의 하루)</h3>
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 3000;
+        
+        images[0] = 'g-1.png';
+        images[1] = 'g-2.png';
+        images[2] = 'g-3.png';
+        images[3] = 'g-4.png';
+        images[4] = 'g-5.png';
+        
+        function changeImg(){
+            document.slide.src = images[i];
+        
+            if(i<images.length - 1){
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout("changeImg()", time);
+        }
+        
+        window.onload = changeImg;
+            </script>
+            <img name="slide" width="70%" height="30%">
+<br><br>
+            <h3>Streaming Video</h3>
+            <video controls>
+              <source src="demo_video.mp4" type="video/mp4" width="70%" height="30%">
+            </video>
+            <br><br>
+            <a href="JJ's one day(정정이의 하루)_ver1.0.zip" download>Download game file</a>
+                    <br><br>
+                    <hr class="two">
+                    <h3>PART 2. coming soon...</h3>
+                    <br><br>
+            <div class="button">
+                <input type="button" value="Back to Buzzies Home" onclick="f1()">
+                    </div>
+</body>
+</html>
